@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OsByezI04F0PpB1zk2PqpLQixKODdFdF6B8jtvOEPd/ynPBxkQqyDC5bpEsjAu3S4rIdwx99dNiVL9YvjdgX/w==",
+  "dgSpecHash": "W4rmMPpVdcEohI0ASlrOh6ABSZq61uYm6yTDWGh0OIueL54zslpxGqQpFq0qu9uUFpL4N5R+tH4ER02OvxpN+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicol\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

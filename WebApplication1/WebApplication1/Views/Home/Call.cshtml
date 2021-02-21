@@ -62,7 +62,7 @@
         @if (ViewBag.id != "False") {
         <text>
                 $(document).ready(function() {
-                    var domain = "jitsi.hostcero.com";
+                    var domain = "meet.jit.si";
                     var options = {
                 roomName: "@ViewBag.id",
                 configOverwrite: { disableDeepLinking: true, disableInviteFunctions: true},
@@ -73,14 +73,6 @@
         </text>
         }        
     </script>    
-    <script>
-        var sec = 0;
-        function pad(val) { return val > 9 ? val : "0" + val; }
-        setInterval(function () {            
-            $("#Sec").val(pad(++sec % 60));
-            $("#Min").val(pad(parseInt(sec / 60, 10)));
-        }, 1000);
-    </script>
     <script>       
         window.onbeforeunload = function () {
             return "Estas seguro?";            
@@ -94,21 +86,13 @@
         <text>
             <div id="meet" class="box" draggable="false"></div>
             <form action='@Url.Action("EndCall", "Home")' method="get">
-                <input type="hidden" name="Min" id="Min" />
-                <input type="hidden" name="Sec" id="Sec" />
-                <input type="hidden" name="Llamada" value="true" />
+                <input id="status_id" name="status_id" type="hidden" value="3">
                 <div id="overlay-btn">
                     <button class="button1">Salir</button>
                 </div>
             </form>
         </text>
     }
-    else
-    {
-    <text>
-      asd  
-    </text>
-     }
 </body>
 
 </html>

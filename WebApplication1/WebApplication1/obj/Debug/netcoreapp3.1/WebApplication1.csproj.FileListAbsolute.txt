@@ -34,5 +34,7 @@ C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp
 C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CopyComplete
 C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
 C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Call.cshtml.g.cs
-C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\EndCall.cshtml.g.cs
+C:\Users\nicol\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\test.cshtml.g.cs
+C:\Users\nicol\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\EndCallTest.cshtml.g.cs
