@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "LLamada";
+}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <style>
+
+        .button1 {
+            float: none;
+            display: block;
+            padding: 0px 50px;
+            margin-left: 10%;
+            margin: auto;
+            font-size: 40px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+        }
+
+            .button1:active {
+                background-color: #215c23;
+            }
+
+        body {
+            overflow: hidden;
+            background-color: cadetblue;
+        }
+
+        #overlay-btn {
+            position: fixed; /* Sit on top of the page content */
+            display: block; /* Hidden by default */
+            width: 12%; /* Full width (cover the whole page) */
+            height: 12%; /* Full height (cover the whole page) */
+            top: 1%;
+            left: 1%;
+            right: 0;
+            bottom: 0;
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        .box {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://meet.jit.si/external_api.js'></script>
+    <script>
+        @if (ViewBag.id != "False") {
+        <text>
+                $(document).ready(function() {
+                    var domain = "meet.jit.si";
+                    var options = {
+                roomName: "@ViewBag.id",
+                configOverwrite: { disableDeepLinking: true, disableInviteFunctions: true},
+                parentNode: document.querySelector('#meet')
+            }
+                var api = new JitsiMeetExternalAPI(domain, options);
+                });
+        </text>
+        }        
+    </script>    
+    <script>       
+        window.onbeforeunload = function () {
+            return "Estas seguro?";            
+        };
+    </script>
+</head>
+
+<body>
+    @if (ViewBag.id != "False")
+    {
+        <text>
+            <div id="meet" class="box" draggable="false"></div>
+            <form action='@Url.Action("EndCall", "Docta")' method="get">
+                <input id="status_id" name="status_id" type="hidden" value="3">
+                <div id="overlay-btn">
+                    <button class="button1">Salir</button>
+                </div>
+            </form>
+        </text>
+    }
+</body>
+
+</html>
